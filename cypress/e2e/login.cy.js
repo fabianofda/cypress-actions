@@ -11,7 +11,7 @@ describe('Login', () => {
     it ('senha obrigatória', ()=> {
         cy.login('qa', null)
         cy.get(toast)
-            .should('have.text', 'Informe a sua senha secreta!err')
+            .should('have.text', 'Informe a sua senha secreta!')
     })
 
     it('usuário não existe', () => {
