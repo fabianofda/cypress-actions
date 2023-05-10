@@ -3,6 +3,7 @@ const tesults = require('cypress-tesults-reporter');
 
 cypress.run({
   // specs to run here
+  browser: 'electron'
 })
 .then((results) => {
   const args = {
